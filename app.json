@@ -1,5 +1,5 @@
 {
-  "name": "scale-sample-callback-server-node",
+  "name": "scale-callback-server-node",
   "description": "Sample callback server in Node.js with MongoDB",
   "keywords": [
     "scale",
