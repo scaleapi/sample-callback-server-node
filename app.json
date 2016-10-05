@@ -1,0 +1,22 @@
+{
+  "name": "scale-annotate-demo",
+  "description": "app to demo scale's annotate feature",
+  "keywords": [
+    "scale",
+    "api"
+  ],
+  "website": "https://scaleapi.com",
+  "repository": "https://github.com/scaleapi/sample-callback-server-node",
+  "logo": "https://www.scaleapi.com/client/img/logo-dark.png",
+  "success_url": "/",
+  "env": {
+    "SCALE_CALLBACK_AUTH_KEY": {
+      "description": "Scale callback auth key. You can find this in your Scale dashboard.",
+      "value": ""
+    }
+  },
+  "image": "heroku/nodejs",
+  "addons": [
+    "mongolab"
+  ]
+}

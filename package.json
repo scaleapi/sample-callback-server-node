@@ -1,0 +1,13 @@
+{
+  "name": "scaleapi-callback",
+  "version": "1.0.1",
+  "description": "Sample Callback Server for Scale API",
+  "scripts": {
+    "start": "node scale"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.3",
+    "express": "~4.13.3",
+    "mongoose": "^4.6.2"
+  }
+}
