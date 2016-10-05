@@ -1,6 +1,6 @@
 {
-  "name": "scale-annotate-demo",
-  "description": "app to demo scale's annotate feature",
+  "name": "scale-sample-callback-server-node",
+  "description": "Sample callback server in Node.js with MongoDB",
   "keywords": [
     "scale",
     "api"
