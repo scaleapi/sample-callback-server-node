@@ -1,0 +1,10 @@
+pipeline:
+  push-image:
+    image:
+      plugins/docker
+    repo:
+      unitq/sample-callback-server-node
+    tags:
+      - ${DRONE_COMMIT_SHA}
+      - ${DRONE_COMMIT_SHA}--${DRONE_COMMIT_BRANCH}
+    secrets: [ docker_username, docker_password ]

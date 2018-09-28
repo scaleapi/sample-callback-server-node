@@ -1,0 +1,25 @@
+version: '2.1'
+services:
+  scaleapi-callback-server:
+    image:
+      scaleapi:latest
+    container_name:
+      scaleapi-callback-server
+    environment:
+      - MONGODB_URI=scaleapi-callback-service-db
+    ports:
+      - "3000:3000"
+#    depends_on:
+#      reviewservice-db:
+#        condition: service_healthy
+
+  scaleapi-callback-service-db:
+    image:
+      mongo:3.2.21-jessie
+    container_name:
+      scaleapi-callback-service-db
+    ports:
+      - "27017:27017"
+#    healthcheck:
+#      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+#      timeout: 20s

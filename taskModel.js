@@ -16,7 +16,8 @@ var schema = new Schema({
   instruction: String,
   params: Schema.Types.Mixed,
   response: Schema.Types.Mixed,
-  urgency: String
+  urgency: String,
+  metadata: Schema.Types.Mixed
 });
 
 var model = mongoose.model('task', schema);
